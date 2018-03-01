@@ -46,7 +46,8 @@ public class RxJavaOperator {
 
     public Observable<List<YoutubeItemUi>> searchVideoWithKeySearchListMergeOperator(String keySearch1, String keySearch2, String keySearch3) {
         return
-                Observable.mergeArrayDelayError(mNetWorkService.searchVideo(keySearch1),
+                Observable
+                        .mergeArrayDelayError(mNetWorkService.searchVideo(keySearch1),
                         mNetWorkService.searchVideo(keySearch2),
                         mNetWorkService.searchVideo(keySearch3));
     }

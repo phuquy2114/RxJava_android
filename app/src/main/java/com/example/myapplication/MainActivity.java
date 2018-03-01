@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mCompositeDisposable = new CompositeDisposable();
         mRxJavaOperator = new RxJavaOperator();
         mergeOperatorSaveCache();
+        zipOperator();
     }
 
     private void zipOperator() {
